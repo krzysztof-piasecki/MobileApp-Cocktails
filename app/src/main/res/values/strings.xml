@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cocktails</string>
+    <string name="detail_button"> Pokaż przepis </string>
+    <string name="cocktail_name"> Nazwa drinka </string>
+    <string name="cocktail_recipe"> Składniki i sposób przygotowania </string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+</resources>
