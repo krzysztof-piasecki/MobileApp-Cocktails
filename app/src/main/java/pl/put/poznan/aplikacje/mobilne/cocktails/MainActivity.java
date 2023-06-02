@@ -97,15 +97,11 @@ public class MainActivity extends AppCompatActivity implements CocktailListFragm
     }
     public void onClickDone(View view) {
         CharSequence text = "To jest prosty pasek snackbar.";
-        int duration = 10;
+        int duration = Snackbar.LENGTH_SHORT;
         Snackbar snackbar = Snackbar.make(findViewById(R.id.coordinator), text, duration);
-        snackbar.setAction("Cofnij", new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Cofnięto!", Toast.LENGTH_SHORT);
-                toast.show();
-            }
+        snackbar.setAction("Cofnij", view1 -> {
+            Toast toast = Toast.makeText(getApplicationContext(), "Cofnięto!", Toast.LENGTH_SHORT);
+            toast.show();
         });
         snackbar.show();
     }

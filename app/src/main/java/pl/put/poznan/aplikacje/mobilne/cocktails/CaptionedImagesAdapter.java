@@ -2,7 +2,6 @@ package pl.put.poznan.aplikacje.mobilne.cocktails;
 
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -13,14 +12,15 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImagesAdapter.ViewHolder> {
-    String[] captions;
+    private String[] captions;
     private final int[] imageIds;
     private Listener listener;
+
     interface Listener {
         void onClick(int position);
     }
 
-    public void setListener(Listener listener){
+    public void setListener(Listener listener) {
         this.listener = listener;
     }
 
@@ -49,13 +49,13 @@ public class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImages
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, final int position){
+    public void onBindViewHolder(ViewHolder holder, final int position) {
         final CardView cardView = holder.cardView;
-        ImageView imageView = (ImageView)cardView.findViewById(R.id.info_image);
+        ImageView imageView = (ImageView) cardView.findViewById(R.id.info_image);
         Drawable drawable = ContextCompat.getDrawable(cardView.getContext(), imageIds[position]);
         imageView.setImageDrawable(drawable);
         imageView.setContentDescription(captions[position]);
-        TextView textView = (TextView)cardView.findViewById(R.id.info_text);
+        TextView textView = (TextView) cardView.findViewById(R.id.info_text);
         textView.setText(captions[position]);
         cardView.setOnClickListener(v -> {
             if (listener != null) {
