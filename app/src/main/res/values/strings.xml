@@ -1,4 +1,5 @@
 <resources>
+    <string name="action_activity_title">Action Activity</string>
     <string name="app_name">Cocktails</string>
     <string name="detail_button"> Pokaż przepis </string>
     <string name="cocktail_name"> Nazwa drinka </string>
@@ -6,4 +7,24 @@
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="reset">Reset</string>
+    <string name="action_title">Action_Activity</string>
+    <string name="action_share">Share</string>
+    <string name="title_top">Fragment główny</string>
+    <string-array name="kategoria1">
+        <item>Pozycja 1 Kat. 1</item>
+        <item>Pozycja 2 Kat. 1 </item>
+        <item>Pozycja 3 Kat. 1 </item>
+    </string-array>
+    <string-array name="kategoria2">
+        <item>Kat. 2 Pozycja 1</item>
+        <item>Kat. 2 Pozycja 2</item>
+        <item>Kat. 2 Pozycja 3 </item>
+    </string-array>
+    <string name="home_tab">Start</string>
+    <string name="kat1_tab">Kategoria 1</string>
+    <string name="kat2_tab">Kategoria 2</string>
+    <string name="top_header">Jakiś nagłówek</string>
+    <string name="top_image">Jakiś obrazek</string>
+    <string name="top_text">Jakieś.</string>
+    <string name="image_title">Zdjęcie.</string>
 </resources>
