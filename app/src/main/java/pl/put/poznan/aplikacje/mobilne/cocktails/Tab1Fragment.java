@@ -32,6 +32,5 @@ public class Tab1Fragment extends Fragment {
             getActivity().startActivity(intent);
         });
         return cocktailRecycler;
-
     }
 }

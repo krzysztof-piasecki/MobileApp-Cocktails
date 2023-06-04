@@ -58,6 +58,5 @@ public class SunsetFragment extends Fragment {
                 .with(sunsetSkyAnimator)
                 .before(nightSkyAnimator);
         animatorSet.start();
-
     }
 }

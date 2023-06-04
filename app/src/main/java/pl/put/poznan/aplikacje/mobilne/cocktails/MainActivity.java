@@ -23,10 +23,8 @@ import com.google.android.material.tabs.TabLayout;
 import pl.put.poznan.aplikacje.mobilne.cocktails.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity implements CocktailListFragmentListener {
-    private ActivityMainBinding binding;
     private ShareActionProvider shareActionProvider;
-
-
+    private ActivityMainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
